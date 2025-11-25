@@ -6,6 +6,10 @@
 
 - You can also find this version in https://github.com/snucrypto/HEAAN/releases/tag/1.1
 
+## Changes
+
+The encryptionMsg now can has a seed value
+
 ## Dependencies
 
 - NTL
