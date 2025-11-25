@@ -150,6 +150,7 @@ public:
 	 * @return ciphertext
 	 */
 	Ciphertext encryptMsg(Plaintext& msg);
+    Ciphertext encryptMsg(Plaintext& msg, ZZ seed);
 
 	/**
 	 * decrypts ciphertext into message
