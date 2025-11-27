@@ -295,7 +295,13 @@ public:
 	//   BOOTSTRAPPING TESTS
 	//----------------------------------------------------------------------------------
 
-
+	/*
+	 * Params: logN, logp, logq, logQ, logSlots, logT
+	 * Suggested: 15, 23, 29, 620, 3, 2
+	 * Suggested: 15, 27, 37, 620, 3, 3
+	 * Suggested: 16, 31, 41, 1240, 3, 3
+	 * Suggested: 16, 39, 54, 1240, 3, 5
+	 */
 	/**
 	 * Testing bootstrapping procedure
 	 * number of modulus bits up: depends on parameters
@@ -318,6 +324,7 @@ public:
 	 * @param[in] logT: auxiliary parameter, corresponds to number of iterations in removeIpart (num of iterations is logI + logT)
 	 */
 	static void testBootstrapSingleReal(long logN, long logq, long logQ, long nu, long logT);
+    static void testBootstrapMul(long logN, long logp, long logq, long logQ, long logSlots, long logT);
 
 };
 
